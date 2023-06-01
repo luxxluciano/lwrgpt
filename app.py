@@ -46,7 +46,7 @@ def chat_redacao():
 
     from urllib.error import URLError
 
-    st.markdown(f"# {list(page_names_to_funcs.keys())[2]}")
+    st.markdown(f"# {list(page_names_to_funcs.keys())[1]}")
     st.write(
         """
         
@@ -74,7 +74,7 @@ def chat_vade():
 
     from urllib.error import URLError
 
-    st.markdown(f"# {list(page_names_to_funcs.keys())[1]}")
+    st.markdown(f"# {list(page_names_to_funcs.keys())[2]}")
     st.write(
         """
        
