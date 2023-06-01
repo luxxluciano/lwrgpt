@@ -40,9 +40,8 @@ def chat_redacao():
     st.markdown(f"# {list(page_names_to_funcs.keys())[2]}")
     st.write(
         """
-        ## Chat_redação_GPT3
-
-        Sou um bot de redação jurídica básica. Minuto petições, contratos e outros textos simples.
+        
+        Um bot de redação jurídica básica. Minuto petições, contratos e outros textos simples.
 
         **Instruções:**
 
@@ -69,8 +68,7 @@ def chat_vade():
     st.markdown(f"# {list(page_names_to_funcs.keys())[1]}")
     st.write(
         """
-        ## ChatVade_códigos
-
+       
         Bot de códigos: Constituição, LINDB, Civil, CPC, Comercial, Penal, CPP, Contravenções, CTN, Eleitoral e Consumidor.
         """
     )
@@ -89,9 +87,7 @@ def chat_cpc():
     st.markdown(f"# {list(page_names_to_funcs.keys())[3]}")
     st.write(
         """
-        ## ChatCPC
-
-        Um bot especialista em legislação e doutrina de processo civil. Qual sua dúvida processual?
+         Um bot especialista em legislação e doutrina de processo civil. Qual sua dúvida processual?
         """
     )
     st.markdown(
