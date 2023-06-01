@@ -24,7 +24,7 @@ def intro():
 
    
     
-    st.write("# Welcome to LwrGPT! 👋")
+    st.title("# Welcome to LwrGPT! 👋")
     st.sidebar.success("Select a demo above.")
 
     st.markdown(
