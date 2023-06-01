@@ -1,5 +1,12 @@
 import streamlit as st
 
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 # Dictionary of authorized users
 authorized_users = {
     "admin": "banana231212..",
@@ -14,6 +21,8 @@ def authenticate(username, password):
 
 def intro():
     import streamlit as st
+
+   
 
     st.write("# Welcome to LwrGPT! 👋")
     st.sidebar.success("Select a demo above.")
