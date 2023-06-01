@@ -23,7 +23,7 @@ def intro():
     import streamlit as st
 
    
-
+    
     st.write("# Welcome to LwrGPT! 👋")
     st.sidebar.success("Select a demo above.")
 
@@ -37,6 +37,16 @@ def intro():
 
         
     """
+    )
+    st.image("logo.jpg")
+
+    st.write(
+        """
+        
+        Powered by BananaMachinadaDS®2023
+
+       
+        """
     )
 
 def chat_redacao():
@@ -52,6 +62,19 @@ def chat_redacao():
         
         Um bot de redação jurídica básica. Minuto petições, contratos e outros textos simples.
 
+       
+        """
+    )
+    st.markdown(
+        """
+        <iframe src="https://www.chatbase.co/chatbot-iframe/cpc-txt-85yt5fbsx" width="100%" height="650" frameborder="0"></iframe>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.write(
+        """
+        
         **Instruções:**
 
         - Indique a minuta a ser redigida (dizendo, por exemplo: "escreva um mandado de segurança").
@@ -60,12 +83,6 @@ def chat_redacao():
         - Por ser um bot básico, possivelmente ele não conseguirá responder em apenas uma mensagem. Se travar, basta escrever "continue" e o texto será completado na mensagem seguinte.
         - Copie o texto gerado e cole no editor de texto do seu computador para fazer os ajustes finais no seu trabalho.
         """
-    )
-    st.markdown(
-        """
-        <iframe src="https://www.chatbase.co/chatbot-iframe/cpc-txt-85yt5fbsx" width="100%" height="650" frameborder="0"></iframe>
-        """,
-        unsafe_allow_html=True
     )
 
 def chat_vade():
