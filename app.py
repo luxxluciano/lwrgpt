@@ -30,6 +30,14 @@ def main():
 
 def display_content():
   
+    
+    st.markdown(
+        """
+        <iframe src="https://www.chatbase.co/chatbot-iframe/cpc-txt-85yt5fbsx" width="100%" height="650" frameborder="0"></iframe>
+        """,
+        unsafe_allow_html=True
+    )
+
     st.markdown(
         """
         ## Como utilizar minhas funções para escrever uma petição judicial.
@@ -47,12 +55,6 @@ def display_content():
         """
     )
 
-    st.markdown(
-        """
-        <iframe src="https://www.chatbase.co/chatbot-iframe/cpc-txt-85yt5fbsx" width="100%" height="650" frameborder="0"></iframe>
-        """,
-        unsafe_allow_html=True
-    )
 
 if __name__ == "__main__":
     main()
