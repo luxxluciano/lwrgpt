@@ -21,11 +21,11 @@ def authenticate(username, password):
 
 def intro():
     import streamlit as st
-
-   
     
     st.write("# Welcome to LwrGPT! 👋")
+    st.image("logo.jpg")
     st.sidebar.success("Select a demo above.")
+    
 
     st.markdown(
         """
@@ -33,21 +33,18 @@ def intro():
         Por exemplo, ajudamos você a consultar leis, pesquisar jurisprudência, redigir petições, etc.
 
         **👈 Select a demo from the dropdown on the left** to see some examples
-        of what LwrGPT can do!
-
+        of what LwrGPT can do!\n\n\n\n\n
         
+
+        Built for non-commercial purposes\n
+        Contact US
+        [contato@bananamachinada.com.br]
     """
     )
-    st.image("logo.jpg")
+   
+    st.image("alan.jpg", width=100)
 
-    st.write(
-        """
-        
-        Powered by BananaMachinadaDS®2023
-
-       
-        """
-    )
+   
 
 def chat_redacao():
 
@@ -130,9 +127,16 @@ page_names_to_funcs = {
     "Chat-STF": chat_stf,
     "Chat-STJ": chat_stj
 }
-
+st.sidebar.image("gpt.jpg")
 demo_name = st.sidebar.selectbox("Choose a demo", page_names_to_funcs.keys())
 page_names_to_funcs[demo_name]()
+st.sidebar.write(
+        """
+    
+        Powered by BananaMachinadaDS®2023\n
+            
+        """
+    )
 
 
 
