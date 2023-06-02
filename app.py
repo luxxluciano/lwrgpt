@@ -7,18 +7,6 @@ hide_menu_style = """
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
-# Dictionary of authorized users
-authorized_users = {
-    "admin": "banana231212..",
-    "piti": "pitiaraujo"
-}
-
-def authenticate(username, password):
-    """Authenticate the user"""
-    if username in authorized_users and authorized_users[username] == password:
-        return True
-    return False
-
 def intro():
     import streamlit as st
     
