@@ -24,7 +24,7 @@ def intro():
 
    
     
-    st.title("# Welcome to LwrGPT! 👋")
+    st.write("# Welcome to LwrGPT! 👋")
     st.sidebar.success("Select a demo above.")
 
     st.markdown(
@@ -85,7 +85,7 @@ def chat_redacao():
         """
     )
 
-def chat_vade():
+def chat_stf():
 
     import streamlit as st
 
@@ -95,17 +95,17 @@ def chat_vade():
     st.write(
         """
        
-        Bot de códigos: Constituição, LINDB, Civil, CPC, Comercial, Penal, CPP, Contravenções, CTN, Eleitoral e Consumidor.
+        Sou um bot jurídico especialista em jurisprudência do STF. Vamos conversar?
         """
     )
     st.markdown(
         """
-        <iframe src="https://www.chatbase.co/chatbot-iframe/vade-leis-txt-kycweb1u0" width="100%" height="600" frameborder="0"></iframe>
+        <iframe src="https://www.chatbase.co/chatbot-iframe/stf-cf-4mm-txt-fekfromuq" width="100%" height="650" frameborder="0"></iframe>
         """,
         unsafe_allow_html=True
     )
 
-def chat_cpc():
+def chat_stj():
     import streamlit as st
 
     from urllib.error import URLError
@@ -113,12 +113,13 @@ def chat_cpc():
     st.markdown(f"# {list(page_names_to_funcs.keys())[3]}")
     st.write(
         """
-         Um bot especialista em legislação e doutrina de processo civil. Qual sua dúvida processual?
+        
+        Sou um bot jurídico que conhece a jurisprudência do STJ.
         """
     )
     st.markdown(
         """
-        <iframe src="https://www.chatbase.co/chatbot-iframe/tOc1_epZLC4b7zWWmx3eP" width="100%" height="650" frameborder="0"></iframe>
+        <iframe src="https://lexgpt-flask-front.vercel.app/?model=stj" width="100%" height="600" frameborder="0" id="frame" allowfullscreen="true"></iframe>
         """,
         unsafe_allow_html=True
     )
@@ -126,9 +127,12 @@ def chat_cpc():
 page_names_to_funcs = {
     "—": intro,
     "chat_redacao": chat_redacao,
-    "chat_vade": chat_vade,
-    "chat_cpc": chat_cpc
+    "Chat-STF": chat_stf,
+    "Chat-STJ": chat_stj
 }
 
 demo_name = st.sidebar.selectbox("Choose a demo", page_names_to_funcs.keys())
 page_names_to_funcs[demo_name]()
+
+
+
