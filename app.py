@@ -7,10 +7,13 @@ hide_menu_style = """
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
+
 def intro():
     import streamlit as st
+
+   
     
-    st.write("# Welcome to LwrGPT! 👋")
+    st.write("# Welcome to LWYRUP_GPT! 👋")
     st.image("logo.jpg")
     st.sidebar.success("Select a demo above.")
     
@@ -115,9 +118,11 @@ page_names_to_funcs = {
     "Chat-STF": chat_stf,
     "Chat-STJ": chat_stj
 }
+
 st.sidebar.image("gpt.jpg")
 demo_name = st.sidebar.selectbox("Choose a demo", page_names_to_funcs.keys())
 page_names_to_funcs[demo_name]()
+st.sidebar.image("BETTER_CALL_SAUL_R18_1024x1024.png")
 st.sidebar.write(
         """
     
