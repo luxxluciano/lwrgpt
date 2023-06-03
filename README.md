@@ -1,5 +1,5 @@
 # Welcome to LwrGPT! 👋
-![logo](logo.jpg)
+![logo](BETTER_CALL_SAUL_R18_1024x1024.png)
 
 ## Select a demo above
 
